@@ -85,7 +85,7 @@ function sudokuSolver( row , col){
 function changeCellColor(cellId , color){
     var cell = document.getElementById(cellId);
     cell.style.background = color ;
-    while(i--);
+    
     
 }
 
@@ -104,14 +104,3 @@ function updateCellValue(cellId , val){
 
 // }
 
-
-
-function summation(){  
-    var data_1 = 4
-    var data_2 = 2
-    eel.add(data_1, data_2)(call_Back)  
-}  
-function call_Back(output){  
-    document.getElementById("cell00").innerHTML = output  
-
-}  
