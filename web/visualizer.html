@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,50 +6,16 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
         
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        
-    </head>
-    <style>
-        div.grid{
-            width: 165px;
-    height: 165px;
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid rgba(150, 150, 150, 1);
-        }
-        div.sudoku{
-            margin: 0 auto ;
-            width: 501px;
-    height: 501px;
-    background: rgba(249, 234, 224, 0.78);
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid rgba(150, 150, 150, 1);
-        }
-        div.cell{
-            width: 53px;
-            height: 53px;
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid rgba(150, 150, 150, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: brown;
-    font-weight: bold;
-    font-size: large;
-        }
-    </style>
-    <body>
+        <script type="text/javascript" src="/eel.js"></script>
 
         
-        
+    </head>
+    <body>
 
         <div class="outerCover" >
             <div class="sudoku">
-                <!-- SUDOKU GRID -->
                 <div class="grid" id="grid0">
                     <div class="cell" id="cell00"></div>
                     <div class="cell" id="cell01"></div>
@@ -157,9 +119,9 @@
             </div>
         </div>
         
-<script src="/script.js"></script>
-<button onclick="fillSudoku()">FILL</button>
-<button onclick="fun()">START</button>
+<button id="fillBtn">FILL</button>
+<button id="visualizeBtn">START</button>
 
+<script type="text/javascript" src="/script.js"></script>
     </body>
 </html>

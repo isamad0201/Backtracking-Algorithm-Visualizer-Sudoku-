@@ -1,0 +1,29 @@
+div.grid{
+    width: 165px;
+height: 165px;
+display: flex;
+flex-wrap: wrap;
+border: 1px solid rgba(150, 150, 150, 1);
+}
+div.sudoku{
+    margin: 0 auto ;
+    width: 501px;
+height: 501px;
+background: rgba(249, 234, 224, 0.78);
+display: flex;
+flex-wrap: wrap;
+border: 1px solid rgba(150, 150, 150, 1);
+}
+div.cell{
+    width: 53px;
+    height: 53px;
+display: flex;
+flex-wrap: wrap;
+border: 1px solid rgba(150, 150, 150, 1);
+display: flex;
+justify-content: center;
+align-items: center;
+color: brown;
+font-weight: bold;
+font-size: large;
+}
