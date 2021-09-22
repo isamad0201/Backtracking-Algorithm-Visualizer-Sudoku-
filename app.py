@@ -16,14 +16,21 @@ def fillGrid():
         for col in range(0, 9):
             if board[row][col] != 0 :
                 eel.updateCellValue(row,col,board[row][col])
-    
-@eel.expose
-def getUnsolvedGrid():
-    fillGrid()
+
 
 @eel.expose
 def visualize():
     solveSudoku(0,0)
+
+@eel.expose
+def setSudoku(grid):
+    for i in range(0,9):
+        for j in range(0,9):
+            board[i][j] = grid[i][j]
+    fillGrid()
+
+def set():
+    print(board)
 
 def valid(row, col, val):
 
